@@ -114,3 +114,9 @@
   .services-grid .service-card .service-copy span,
   .services-grid .service-card .service-arrow {transition:none;}
 }
+
+/* Place save/print actions immediately below the visible checklist. */
+.checklist-inner{row-gap:18px}
+.checklist-actions{grid-column:2;grid-row:2}
+@media(max-width:820px){.checklist-actions{grid-column:1;grid-row:auto;max-width:650px;width:100%;margin:0 auto}}
+@media print{.checklist-actions{display:none!important}}
