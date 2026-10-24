@@ -1,36 +1,28 @@
-/** Edit these links when partners are confirmed. Leave insuranceQuoteUrl empty until ready. */
+/* SmoothMove.in - change links and partners here; no account, database, or build step needed. */
 window.SMOOTHMOVE_CONFIG = {
-  insuranceQuoteUrl: '',
+  insuranceQuoteUrl: '', // Add your insurance agent's HTTPS quote-form URL.
   perks: [
     {
-      title: 'Change your address',
-      subtitle: 'Official USPS change-of-address service',
-      category: 'essentials',
-      kind: 'Moving resource',
-      icon: 'mail',
-      href: 'https://moversguide.usps.com/',
-      featured: true
+      id: 'inkind',
+      logo: 'assets/inkind.png',
+      title: 'inKind',
+      category: 'Dining',
+      subtitle: 'Find new favorite restaurants and discover dining rewards.',
+      url: 'https://app.inkind.com/refer/6J4VSJAP',
+      button: 'Explore inKind',
+      enabled: true
     },
     {
-      title: 'Get your utilities connected',
-      subtitle: 'One place to request help with home services',
-      category: 'home',
-      kind: 'Concierge service',
-      icon: 'zap',
-      href: 'https://homeconnectpathway.com/',
-      featured: false
-    },
-    {
-      title: 'Your moving checklist',
-      subtitle: 'A simple way to stay ahead of moving day',
-      category: 'moving',
-      kind: 'Free resource',
-      icon: 'check',
-      href: '#checklist',
-      featured: false
+      id: 'tmobile',
+      logo: 'assets/t-mobile.png',
+      title: 'T-Mobile',
+      category: 'Wireless',
+      subtitle: 'Thinking about switching? See what T-Mobile has to offer.',
+      url: 'https://referral.t-mobile.com/YxtUIsB',
+      button: 'View T-Mobile Offer',
+      enabled: true // Confirm T-Mobile permits public website promotion before deploying.
     }
-    // Add verified offers here. Example structure:
-    // { title:'Partner name', subtitle:'Actual verified offer terms', category:'moving',
-    //   kind:'Partner offer', icon:'gift', href:'https://your-affiliate-url.com', disclosure:'Affiliate link' }
+    // Add Four Hands Outlet only after you have a confirmed offer and permission to feature it.
+    // Add The Home Depot after you have its approved destination link and offer copy.
   ]
 };
